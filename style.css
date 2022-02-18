@@ -1,13 +1,18 @@
 header {
   max-width: 1680px;
-  height: 960px;
+  height: 100vh;
+  max-height: 960px;
   margin: auto;
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: center;
 }
 .bg_header{
   background: url(images/video_ramis.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 h1 {
   font-family: Montserrat;
@@ -18,8 +23,8 @@ h1 {
   color: #000000;
 }
 .bg_header__title{
-  margin-top: 320px;
-  margin-bottom: 180px;
+  margin-top: 390px;
+
 }
 .btn {
   font-family: Montserrat;
@@ -152,9 +157,9 @@ a{
   padding: 0 20px 0 20px;
 }
 .log_nav{
-  width: 100%;
+  width: 1200px;
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-start;
 }
 .log_nav_left{
   display: flex;
