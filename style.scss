@@ -16,6 +16,10 @@ section{
   align-items: center;
   justify-content: center;
   padding: 80px;
+  box-sizing: border-box;
+}
+footer{
+  max-height: 501px;
 }
 a{
   text-decoration: none;
@@ -28,6 +32,10 @@ p{
   line-height: 30px;
   letter-spacing: -0.015em;
   color: rgba(0, 0, 0, 0.8);
+}
+.p_large{
+  font-size: 36px;
+  line-height: 50px;
 }
 h1{
 font-family: Montserrat;
@@ -150,6 +158,7 @@ color: #000000;
 .learn_sec{
   display: flex;
   align-items: flex-start;
+  max-height: 948px;
 }
 .learn_header{
   display: flex;
@@ -169,4 +178,69 @@ color: #000000;
 .card{
   width: 45%;
   min-width: 300px;
+}
+/* photo section */
+.photo_sec{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 80px;
+  max-height: 600px;
+}
+.photo{
+  align-self: flex-start;
+  width: 50%;
+  max-width: 750px;
+}
+.photo_right{
+  background: #F5F5F5;
+}
+/* Partners section */
+.part_sec{
+  max-height: 738px;
+}
+.part_descr{
+
+}
+.part_header{
+  font-size: 48px;
+  line-height: 72px;
+  margin-bottom: 30px;
+}
+.part_parag{
+  margin-top: 30px;
+  max-width: 1392px;
+  text-align: center;
+}
+.part_cont{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-content: space-between;
+  width: 1028px;
+  height: 216px;
+  margin-top: 44px;
+}
+.part_photo{
+  width: 173px;
+  height: 76px;
+  padding: 0 42px;
+}
+/* Contact us section */
+.contact_us_sec{
+  max-height: 340px;
+  flex-direction: row;
+  background: #F5F5F5;
+  justify-content: flex-start;
+}
+.p_contact_us{
+  max-width: 943px;
+}
+.btn_marg{
+  margin-left: 45px;
+}
+/* Footer section */
+
+.footer_menu{
+
 }
