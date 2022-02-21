@@ -1,10 +1,13 @@
+$accent_color:#18A0FB;
+$backgr_color:#fff;
+$backgr_accent:#F5F5F5;
 body {
-  margin: 0;
-  background:#FFFFFF;
+  margin: 1px;
+  background: $backgr_color;
 }
 header {
   max-width: 1680px;
-  background:#FFFFFF;
+  background: $backgr_color;
 }
 section{
   max-width: 1680px;
@@ -59,7 +62,7 @@ color: #000000;
 }
 /* navigation container */
 .nav_container{
-  background: #fff;
+  background: $backgr_color;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -67,23 +70,32 @@ color: #000000;
   height: 60px;
   padding: 0 80px;
   margin: auto;
+
+  .logo_navigation_menu{
+    display: flex;
+    .logo{
+      display: flex;
+      align-items: center;
+      margin: 0 32px;
+      .logo_simbol{
+        position: relative;
+        bottom: 3px;
+      }
+      .logo_text{
+        margin-left:12px;
+      }
+    }
+ }
+  .reg_box{
+    display: flex;
+    align-items: center;
+    margin-left: 40px;
+  }
 }
-.logo_navigation_menu{
-   display: flex;
-}
+
 /* Logo */
-.logo{
-  display: flex;
-  align-items: center;
-  margin: 0 32px;
-}
-.logo_simbol{
-  position: relative;
-  bottom: 3px;
-}
-.logo_text{
-  margin-left:12px;
-}
+
+
 /* Navigation buttons*/
 .nav_menu{
   display: flex;
@@ -95,25 +107,21 @@ color: #000000;
   font-size: 15px;
   line-height: 18px;
   letter-spacing: -0.015em;
-  color: #18A0FB;
+  color: $accent_color;
   margin-left: 43px;
 }
 /* Registration buttons */
-.reg_box{
-  display: flex;
-  align-items: center;
-  margin-left: 40px;
-}
+
 .btn {
   font-family: Montserrat;
   font-weight: 500;
   font-size: 17px;
   line-height: 21px;
   letter-spacing: -0.015em;
-  background: #FFF;
-  color: #18a0fb;
+  background: $backgr_color;
+  color: $accent_color;
   text-decoration: none;
-  border: 1px solid #18a0fb;
+  border: 1px solid $accent_color;
   box-sizing: border-box;
   border-radius: 6px;
   width: 130px;
@@ -124,8 +132,8 @@ color: #000000;
   cursor: pointer;
 }
 .btn_accent {
-  background: #18a0fb;
-  color: #fff;
+  background: $accent_color;
+  color: $backgr_color;
   border: none;
 }
 .register{
@@ -188,7 +196,7 @@ color: #000000;
   margin: 0 20px;
 }
 .photo_right{
-  background: #F5F5F5;
+  background: $backgr_accent;
 }
 /* Partners section */
 .part_sec{
@@ -222,7 +230,7 @@ color: #000000;
 .contact_us_sec{
   max-height: 340px;
   flex-direction: row;
-  background: #F5F5F5;
+  background: $backgr_accent;
   justify-content: flex-start;
   padding: 0 80px;
 }
@@ -316,4 +324,8 @@ i[class^="icon"]:not(:first-of-type){
   .p_contact_us{
     margin-right: 0;
   }
+}
+
+@function pxToEm($px_size, $defaul_size: 16) {
+  @return $px_size / $defaul_size + 0em;
 }
