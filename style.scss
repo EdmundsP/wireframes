@@ -3,28 +3,28 @@ body {
   background:#FFFFFF;
 }
 header {
-  max-width: 100%;
+  max-width: 1680px;
   background:#FFFFFF;
 }
 section{
   max-width: 1680px;
-  height: 100vh;
   max-height: 960px;
+  height: 100vh;
+  padding: 80px;
   margin: auto;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  padding: 80px;
 }
 footer{
-  width: 1840px;
+  max-width: 1680px;
+  max-height: 501px;
+  height: 100vh;
   padding: 80px;
-  box-sizing: border-box;
-  height: 501px;
+  margin: auto;
   display: flex;
   flex-direction: column;
-  margin: auto;
   align-items: center;
 }
 a{
@@ -32,8 +32,6 @@ a{
 }
 p{
   font-family: Montserrat;
-  font-style: normal;
-  font-weight: normal;
   font-size: 18px;
   line-height: 30px;
   letter-spacing: -0.015em;
@@ -45,8 +43,6 @@ p{
 }
 h1{
 font-family: Montserrat;
-font-style: normal;
-font-weight: normal;
 font-size: 56px;
 line-height: 80px;
 text-align: center;
@@ -55,17 +51,12 @@ color: #000000;
 }
 h4{
 font-family: Montserrat;
-font-style: normal;
 font-weight: bold;
 font-size: 24px;
 line-height: 36px;
-/* identical to box height, or 150% */
-
 letter-spacing: -0.015em;
-
 color: #000000;
 }
-
 /* navigation container */
 .nav_container{
   background: #fff;
@@ -73,7 +64,6 @@ color: #000000;
   justify-content: space-between;
   align-items: center;
   max-width: 1526px;
-  min-width: 930px;
   height: 60px;
   padding: 0 80px;
   margin: auto;
@@ -85,7 +75,7 @@ color: #000000;
 .logo{
   display: flex;
   align-items: center;
-  margin-right: 32px;
+  margin: 0 32px;
 }
 .logo_simbol{
   position: relative;
@@ -100,16 +90,14 @@ color: #000000;
   align-items: center;
 }
 .nav_btn{
-  margin-left: 43px;
   font-family: Montserrat;
-  font-style: normal;
   font-weight: 500;
   font-size: 15px;
   line-height: 18px;
   letter-spacing: -0.015em;
   color: #18A0FB;
+  margin-left: 43px;
 }
-
 /* Registration buttons */
 .reg_box{
   display: flex;
@@ -157,8 +145,8 @@ color: #000000;
   justify-content: center;
 }
 .call_to_btn{
-  width: 192px;
-  height: 52px;
+  min-width: 192px;
+  min-height: 52px;
 }
 /* Learns section */
 .learn_sec{
@@ -179,11 +167,10 @@ color: #000000;
 .card_header{
   font-size: 48px;
   line-height: 72px;
-  display: flex;
 }
 .card{
   width: 45%;
-  min-width: 300px;
+  min-width: 373px;
 }
 /* photo section */
 .photo_sec{
@@ -197,7 +184,8 @@ color: #000000;
 .photo{
   align-self: center;
   width: 50%;
-  max-width: 750px;
+  min-width: 414px;
+  margin: 0 20px;
 }
 .photo_right{
   background: #F5F5F5;
@@ -228,7 +216,7 @@ color: #000000;
 .part_photo{
   width: 173px;
   height: 76px;
-  padding: 0 42px;
+  padding: 0 42px 64px;
 }
 /* Contact us section */
 .contact_us_sec{
@@ -266,10 +254,66 @@ color: #000000;
   display: flex;
   justify-content: space-between;
   width: 458px;
+  min-width: 271px;
 }
 .partner_icon_cont{
   padding: 80px 0 40px 0;
 }
 i[class^="icon"]:not(:first-of-type){
   margin-left: 21px;
+}
+/* Media */
+@media screen and (max-width: 924px){
+  .learn_sec{
+      max-height: none;
+      height: auto;
+    }
+    .card_block{
+        justify-content: center;
+    }
+    .learn_header{
+        font-size: 50px;
+    }
+   .card_header{
+       font-size: 40px;
+   } 
+   .link_conainer{
+     flex-direction: column;
+   }
+   .footer_menu{
+     justify-content: center;
+   }
+   .footer_menu_link{
+     text-align: center;
+   }
+
+}
+@media screen and (max-width: 1100px){
+  .photo_sec{
+    max-height: none;
+    height: auto;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .part_sec{
+   max-height: none;
+   height: auto;
+   flex-wrap: wrap;
+   align-content: center;
+  }
+  .part_cont{
+    width: auto;
+    justify-content: center;
+    height: auto;
+  }
+  .contact_us_sec{
+    height: auto;
+    flex-wrap: wrap;
+    justify-content: center;
+    text-align: center;
+    padding: 10px 80px 50px;
+  }
+  .p_contact_us{
+    margin-right: 0;
+  }
 }
